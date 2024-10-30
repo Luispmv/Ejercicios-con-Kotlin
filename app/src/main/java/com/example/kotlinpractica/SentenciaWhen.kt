@@ -86,28 +86,46 @@ fun vehiculos(vehiculo:String){
 
 //Meses del año
 //Dado el número de un mes (1 para enero, 2 para febrero, etc.), devuelve el nombre del mes usando match-case.
-
-
-//Costos de envío
-//Crea una función que reciba una zona de envío ("local", "nacional", "internacional")
-// y devuelva el costo asociado (5, 10, 20).
-
-
-//Reconocimiento de figuras geométricas
-//Dada la cantidad de lados de una figura (3 para triángulo, 4 para cuadrado/rectángulo, 5 para pentágono),
-// devuelve el nombre de la figura.
-
-
-//Identificación de colores
-//Dado un código hexadecimal de color,
-// devuelve el nombre del color (por ejemplo, #FF0000 es rojo).
-
-
-//Conversión de temperatura a estados de agua
-//Escribe una función que, dada una temperatura en grados Celsius,
-// devuelva el estado del agua ("solid", "liquid", "gas").
-
-
-//Asignación de tareas según el día
-//Dado el día de la semana, devuelve una tarea asignada para ese
-// día (por ejemplo, "Lunes": "reunión semanal", "Miércoles": "revisión de proyecto").
+fun MesesAño(mes:Int){
+    when(mes){
+        1 ->{
+            println("Enero")
+        }
+        2 ->{
+            println("Febrero")
+        }
+        3 ->{
+            println("Marzo")
+        }
+        4 ->{
+            println("Abril")
+        }
+        5 ->{
+            println("Mayo")
+        }
+        6 ->{
+            println("Junio")
+        }
+        7 ->{
+            println("Julio")
+        }
+        8 ->{
+            println("Agosto")
+        }
+        9 ->{
+            println("Septiembre")
+        }
+        10 ->{
+            println("Octubre")
+        }
+        11 ->{
+            println("Noviembre")
+        }
+        12 ->{
+            println("Diciembre")
+        }
+        else ->{
+            println("No existe ese mes")
+        }
+    }
+}
