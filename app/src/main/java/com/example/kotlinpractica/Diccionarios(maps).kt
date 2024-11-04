@@ -1,7 +1,9 @@
 package com.example.kotlinpractica
 
 fun main(){
-    mapCreation()
+//    mapCreation()
+    var call = contarCaracteres("Amigablea")
+    println(call)
 }
 //Crear y Manipular un Map
 //Crea un map mutable llamado países que contenga como clave algunos países y como valor su población (en millones).
@@ -9,7 +11,6 @@ fun main(){
 //Actualiza un valor
 //Elimina un elemento
 //Imprime el map resultante de las operaciones anteriores
-
 
 fun mapCreation(){
     var countries :MutableMap<String, Int> = mutableMapOf()
@@ -33,6 +34,18 @@ fun mapCreation(){
 //Contar Frecuencia de Caracteres
 //Escribe una función llamada contarCaracteres que reciba un String y retorne un Map donde cada clave es un
 // carácter en la cadena y el valor es la cantidad de veces que aparece
+
+fun contarCaracteres(cadena:String):Map<Char,Int>{
+    var frecuencia= mutableMapOf<Char, Int>()
+    for(letra in cadena){
+        if(letra in frecuencia){
+            frecuencia[letra] = frecuencia[letra]!!+1
+        }else{
+            frecuencia[letra] = 1
+        }
+    }
+    return frecuencia
+}
 
 
 
